@@ -1,14 +1,14 @@
-//calculating employee wage for different companies by taking inputs from user
-public class UC8EmpWageDiffCompanies {
+//calculating employee wage for different companies
+        public class UC8EmpWageDiffCompanies {
 	final static int isabsent = 0; 
 	final static int isFullTime = 1;
-     final static int isPartTime = 2;
+        final static int isPartTime = 2;
     
-     public static void calculate(String company_name,int empRatePerHour,int totalDays,int totalHours){
+         public static void calculate(String company_name,int empRatePerHour,int totalDays,int totalHours){
     	 System.out.println("                             ");
     	 System.out.println("                             ");
-	     System.out.println("Company Name= "+company_name);
-	     System.out.println("Employee's status= ");
+	 System.out.println("Company Name= "+company_name);
+	 System.out.println("Employee's status= ");
     	 System.out.println("Day   Attendance    DailyWage  TotalWorkingHours TotalMonthlySallery");
     	 int hours = 0;
 	     int days = 0;
@@ -31,7 +31,7 @@ public class UC8EmpWageDiffCompanies {
 	                     empHours = 0;
 	                     status="Absent**";
 	             }
-	             salary = empRatePerHour*empHours;
+	         salary = empRatePerHour*empHours;
                  totalSalary = totalSalary+salary;
                  System.out.println((days+1)+"\t"+status+"\t"+salary+"\t\t"+hours+"\t\t"+totalSalary);
                  hours += empHours;
@@ -46,10 +46,10 @@ public class UC8EmpWageDiffCompanies {
     		System.out.println("Welcome to the Employee Wage problem using java");
     		System.out.println("                             ");
     		calculate("Amazon",150,20,180);
-       	    calculate("Microsoft",500,24,200);
-       	    calculate("Flipkart",200,26,230);
-       	    calculate("Wipro",120,28,250);
-       	    calculate("Accenture",250,22,200);
+       	        calculate("Microsoft",500,24,200);
+       	        calculate("Flipkart",200,26,230);
+       	        calculate("Wipro",120,28,250);
+       	        calculate("Accenture",250,22,200);
      }
 
 }
